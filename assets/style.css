@@ -1,0 +1,277 @@
+/* CHAMIAN — сверстано по PSD-макетам (Ягудин Дизайн) */
+:root{
+  --green:#8EB105;
+  --ink:#111;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-weight:300;
+  font-size:16px;
+  line-height:1.55;
+  color:var(--ink);
+  background:#fff;
+}
+img{max-width:100%}
+a{color:inherit;text-underline-offset:3px}
+.container{max-width:1590px;margin:0 auto;padding-inline:24px}
+
+/* ---------- header ---------- */
+.site-header{background:#000;color:#fff;padding:8px 0 14px}
+.header-inner{display:flex;flex-direction:column;align-items:center;gap:12px;position:relative}
+.logo img{height:82px;width:auto;display:block}
+.main-nav{display:flex;gap:48px}
+.main-nav a{color:#fff;font-size:15px;font-weight:300}
+.main-nav a.active{font-weight:600}
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer;position:absolute;right:8px;top:24px}
+.burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:.2s}
+
+/* ---------- typography / common ---------- */
+.page-title{font-size:30px;font-weight:300;margin:36px 0 28px}
+.page-title.crumb{font-size:26px}
+.page-head{display:flex;align-items:baseline;gap:40px;flex-wrap:wrap}
+.page-head .page-title{margin-bottom:16px}
+.head-link{font-size:18px}
+.minihead{font-size:15px;font-weight:400;letter-spacing:.02em;margin:0 0 20px}
+.intro{max-width:1490px;margin:36px 0 8px;font-size:16px}
+.intro p{margin:0 0 14px}
+.text-page{max-width:900px;font-size:16px}
+.text-page ol{padding-left:22px}
+.text-page li{margin-bottom:10px}
+.big-contact a{font-size:24px;font-weight:400;text-decoration:none;line-height:1.8}
+.more{display:inline-block;font-size:15px;text-decoration:underline;margin-top:22px}
+.soon{cursor:default}
+
+/* ---------- green button ---------- */
+.btn-order{
+  display:block;width:311px;height:60px;line-height:60px;
+  margin:56px auto;
+  background:url(img/btn-green.png) center/100% 100% no-repeat;
+  color:#fff;text-align:center;font-size:15px;
+}
+.btn-order:hover{filter:brightness(1.06)}
+
+/* ---------- home table sections ---------- */
+.table-sec{display:flex;gap:60px;margin:64px 0;align-items:flex-start}
+.sec-media{flex:1 1 68%;min-width:0}
+.sec-media img{width:100%;height:auto;display:block}
+.sec-side{flex:0 0 300px;padding-top:44px}
+.sec-side .wordmark{max-width:292px;height:auto;margin-bottom:56px;display:block}
+.card-wrap{filter:drop-shadow(0 4px 14px rgba(0,0,0,.18))}
+.card{
+  background:#fff;padding:30px 18px 26px;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 34px),calc(100% - 34px) 100%,0 100%);
+}
+.card h3{font-size:21px;font-weight:400;letter-spacing:.04em;margin:0 0 20px}
+.card .serial{font-size:13.5px;margin-bottom:16px}
+.card p{font-size:13px;line-height:1.5;margin:0 0 12px}
+.card .more{font-size:13.5px;margin-top:8px}
+
+/* ---------- о нас ---------- */
+.onas-gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+.onas-gallery img{width:100%;height:auto;display:block}
+.onas-gallery img:first-child{grid-column:1/-1}
+
+/* ---------- марки авто ---------- */
+.jump{font-size:18px}
+.jump select{font:inherit;font-size:15px;margin-left:10px;padding:4px 8px}
+.brand-sec{display:flex;gap:84px;margin:56px 0;align-items:flex-start}
+.brand-media{flex:0 0 46%;min-width:0}
+.brand-media img{width:100%;height:auto;display:block}
+.brand-text{flex:1;min-width:0}
+.brand-text .wordmark{max-height:46px;width:auto;max-width:100%;margin-bottom:26px;display:block}
+.brand-text p{font-size:14.5px;margin:0 0 12px}
+
+/* ---------- контакты ---------- */
+.contacts-sec{display:flex;gap:88px;margin:48px 0;align-items:flex-start}
+.contacts-media{flex:0 0 46%;min-width:0}
+.contacts-media img{width:100%;height:auto;display:block}
+.contacts-text{flex:1;font-size:18px}
+.contacts-text p{margin:0 0 26px}
+
+/* ---------- страница стола ---------- */
+.spec-sec{margin:64px 0}
+.spec-cols{display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap}
+.spec-draw{display:flex;gap:16px;align-items:flex-start;flex:0 0 auto;max-width:56%}
+.spec-draw img{max-width:100%;height:auto}
+.spec-text{flex:1;min-width:280px;font-size:13.5px;line-height:1.6}
+.gallery-sec{margin:64px 0}
+.gallery-wrap{position:relative}
+.gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gallery::-webkit-scrollbar{display:none}
+.gallery img{flex:0 0 auto;width:400px;max-width:80vw;height:auto;scroll-snap-align:start}
+.gal-btn{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:2;
+  width:58px;height:120px;border:0;cursor:pointer;
+  background:rgba(255,255,255,.35);color:#fff;font-size:38px;line-height:1;
+}
+.gal-btn:hover{background:rgba(255,255,255,.55)}
+.gal-btn.prev{left:0}
+.gal-btn.next{right:0}
+.about-brand{margin:64px 0;max-width:1590px}
+.about-brand p{font-size:14.5px;margin:0 0 10px}
+.brand-photo{display:block;margin-top:28px;max-width:651px;width:100%;height:auto}
+
+/* ---------- марка Ferrari ---------- */
+.story-sec{display:flex;gap:86px;margin:56px 0;align-items:flex-start}
+.story-media{flex:0 0 40%;min-width:0}
+.story-media img{width:100%;height:auto;display:block}
+.story-text{flex:1;min-width:0}
+.story-text h2{font-size:16px;font-weight:500;letter-spacing:.02em;margin:0 0 16px}
+.story-text p{font-size:14.5px;margin:0 0 12px}
+.photo-strip{display:flex;gap:2px;margin:72px -24px 0}
+.photo-strip img{width:33.4%;min-width:0;object-fit:cover;display:block}
+
+/* ---------- footer ---------- */
+.site-footer{margin-top:90px;font-size:15px}
+.foot-head{display:grid;grid-template-columns:1.05fr 1.15fr 1.6fr auto;align-items:center;padding-block:14px}
+.foot-head .socials{display:flex;gap:10px;align-items:center}
+.foot-head .socials img{height:17px;width:auto;display:block}
+.foot-body{background:url(img/footer-bg.jpg) center/cover no-repeat;color:#fff;padding:26px 0 44px}
+.foot-grid{display:grid;grid-template-columns:1.05fr 1.15fr 1.6fr auto;row-gap:0}
+.foot-grid a,.foot-grid .soon{display:block;margin-bottom:16px;color:#fff;text-decoration:underline}
+.foot-grid .credit{justify-self:end}
+.foot-grid .credit a{display:inline}
+.support{margin-top:72px;font-size:14px}
+.support a{display:inline-block;margin-top:10px;font-size:22px;font-weight:400;color:#fff;text-decoration:none}
+.copyright{margin-top:64px;font-size:14px}
+
+/* ---------- desktop/mobile image variants ---------- */
+img.pic-mobile{display:none}
+.mob-more{display:none}
+.nav-socials{display:none}
+.foot-mobile{display:none}
+.sec-head{display:block}
+
+/* ---------- tablet ---------- */
+@media (max-width:960px) and (min-width:861px){
+  .table-sec{gap:32px}
+  .sec-side{flex-basis:260px}
+  .brand-sec,.story-sec{gap:40px}
+}
+
+/* ---------- mobile (по макетам site-*-mob) ---------- */
+@media (max-width:860px){
+  body{font-size:13px}
+  .container{padding-inline:14px}
+
+  /* шапка: бургер слева, логотип справа */
+  .site-header{padding:0}
+  .header-inner{flex-direction:row;align-items:center;justify-content:space-between;height:77px;padding-inline:13px;gap:0}
+  .burger{display:block;position:static;padding:8px 8px 8px 0}
+  .burger span{width:27px;height:2px;margin:4px 0}
+  .logo img{height:44px}
+
+  /* меню списком с разделителями и стрелками */
+  .main-nav{
+    display:none;flex-direction:column;gap:0;width:100%;
+    position:absolute;left:0;top:77px;z-index:30;
+    background:#000;padding:0 14px 34px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{
+    position:relative;padding:19px 2px;font-size:13px;text-decoration:none;
+    border-bottom:1px solid #3a3a3a;
+  }
+  .main-nav a:first-child{border-top:1px solid #3a3a3a}
+  .main-nav a::after{
+    content:"";position:absolute;right:14px;top:50%;
+    width:8px;height:8px;border-right:1.5px solid #fff;border-top:1.5px solid #fff;
+    transform:translateY(-50%) rotate(45deg);
+  }
+  .main-nav a.active{font-weight:600}
+  .nav-socials{display:flex;gap:12px;margin-top:38px;align-items:center}
+  .nav-socials img{height:15px;width:auto}
+
+  /* заголовки страниц */
+  .page-title{font-size:17px;margin:22px 0 18px}
+  .page-title.crumb{font-size:16px}
+  .page-head{gap:18px;align-items:baseline}
+  .head-link{font-size:13px}
+  .jump{font-size:13px}
+  .jump select{font-size:13px}
+  .minihead{font-size:13px;margin-bottom:14px}
+  .intro{margin:18px 0 6px;font-size:13px}
+  .intro p{margin-bottom:10px}
+  .text-page{font-size:13px}
+  .big-contact a{font-size:18px}
+
+  /* картинки: мобильные варианты */
+  img.pic-desktop{display:none}
+  img.pic-mobile{display:block}
+
+  /* секции столов */
+  .table-sec,.brand-sec,.contacts-sec,.story-sec{align-items:stretch}
+  .table-sec{flex-direction:column;gap:0;margin:26px 0}
+  .sec-media{width:auto;flex:none;margin-inline:-14px}
+  .sec-media img{width:100%}
+  .sec-side{flex:none;width:100%;max-width:none;padding-top:14px}
+  .sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+  .sec-head .wordmark{margin:0;max-height:18px;width:auto;max-width:55%}
+  .mob-more{display:inline-block;font-size:12px;text-decoration:underline;white-space:nowrap}
+  .card-wrap{filter:none}
+  .card{padding:0;clip-path:none;background:none}
+  .card h3{display:none}
+  .card .serial{font-size:12px;margin-bottom:8px}
+  .card p{font-size:12px;margin-bottom:8px;max-width:270px}
+  /* на главной и «Столах» — только первый абзац, без серии и ссылки в карточке */
+  .home-sec .card .serial{display:none}
+  .home-sec .card p:not(:first-of-type){display:none}
+  .home-sec .card .more{display:none}
+  .home-sec .card p{margin-bottom:0}
+
+  /* главная: без зелёной кнопки, как в макете */
+  .page-index .btn-order{display:none}
+
+  /* кнопка */
+  .btn-order{width:186px;height:36px;line-height:36px;font-size:12px;margin:34px 14px 34px auto}
+
+  /* о нас */
+  .onas-gallery{grid-template-columns:1fr;gap:14px;margin-top:24px}
+
+  /* марки авто */
+  .brand-sec{flex-direction:column;gap:0;margin:18px 0 34px}
+  .brand-media{flex:none;width:100%}
+  .brand-text .wordmark{max-height:18px;margin:20px 0 14px}
+  .brand-text p{font-size:12px;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+  .brand-text .more{display:block;width:fit-content;margin-left:auto;font-size:12px;margin-top:14px}
+
+  /* контакты */
+  .contacts-sec{flex-direction:column;gap:20px;margin:20px 0}
+  .contacts-media{flex:none;width:auto;margin-inline:-14px}
+  .contacts-text{font-size:13px}
+  .contacts-text p{margin-bottom:14px}
+
+  /* страница стола */
+  .spec-sec,.gallery-sec,.about-brand{margin:34px 0}
+  .spec-cols{gap:18px}
+  .spec-draw{max-width:100%;gap:10px}
+  .spec-text{font-size:12px;min-width:0}
+  .gallery img{width:50vw}
+  .gal-btn{width:42px;height:93px;font-size:26px}
+  .about-brand p{font-size:12px;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+  .about-brand .more{display:block;width:fit-content;margin-left:auto;font-size:12px}
+  .brand-photo{margin-top:16px}
+
+  /* марка Ferrari */
+  .story-sec{flex-direction:column;gap:0;margin:26px 0}
+  .story-media{flex:none;width:100%}
+  .story-text h2{font-size:12px;margin:16px 0 6px;font-weight:500}
+  .story-text p{font-size:12px}
+  .photo-strip{flex-direction:column;gap:14px;margin:34px 0 0}
+  .photo-strip img{width:100%}
+
+  /* футер: компактный мобильный, десктопный скрыт */
+  .foot-head,.foot-grid,.support,.copyright{display:none}
+  .foot-body{background:none;padding:0}
+  .foot-mobile{display:block;font-size:12px}
+  .fm-head{padding:12px 14px}
+  .fm-head .soon,.fm-body .soon{display:block;text-decoration:underline;margin-bottom:14px}
+  .fm-body{background:url(img/footer-bg.jpg) center/cover no-repeat;color:#fff;padding:20px 0 26px}
+  .fm-support{margin-top:30px}
+  .fm-support a{display:inline-block;margin-top:6px;font-size:14px;font-weight:400;color:#fff;text-decoration:none}
+  .fm-copy{margin-top:24px}
+  .site-footer{margin-top:44px}
+}
