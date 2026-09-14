@@ -90,6 +90,12 @@ a{color:inherit;text-underline-offset:3px}
 .contacts-media img{width:100%;height:auto;display:block}
 .contacts-text{flex:1;font-size:18px}
 .contacts-text p{margin:0 0 26px}
+.contacts-text .messengers{display:flex;gap:28px}
+.requisites{margin:24px 0 8px;max-width:900px}
+.requisites dl{display:grid;grid-template-columns:280px 1fr;gap:10px 32px;margin:0;font-size:14.5px}
+.requisites dt{color:#666}
+.requisites dd{margin:0;font-variant-numeric:tabular-nums}
+.requisites dd a{text-decoration:none}
 
 /* ---------- страница стола ---------- */
 .spec-sec{margin:64px 0}
@@ -243,11 +249,17 @@ img.pic-mobile{display:none}
   .contacts-media{flex:none;width:auto;margin-inline:-14px}
   .contacts-text{font-size:13px}
   .contacts-text p{margin-bottom:14px}
+  .requisites dl{grid-template-columns:1fr;gap:2px}
+  .requisites dt{margin-top:12px}
+  .requisites dd{overflow-wrap:anywhere}
 
   /* страница стола */
   .spec-sec,.gallery-sec,.about-brand{margin:34px 0}
   .spec-cols{gap:18px}
-  .spec-draw{max-width:100%;gap:10px}
+  .spec-draw{max-width:100%;width:100%;gap:8px}
+  .spec-draw img{min-width:0;height:auto}
+  .spec-draw img:first-child{width:62%}
+  .spec-draw img:last-child{width:35%}
   .spec-text{font-size:12px;min-width:0}
   .gallery img{width:50vw}
   .gal-btn{width:42px;height:93px;font-size:26px}
